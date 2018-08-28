@@ -1,5 +1,5 @@
 {
-  "name": "ssh2-sftp-client",
+  "name": "@softbrains/ssh2-sftp-client",
   "version": "2.3.2",
   "description": "ssh2 sftp client for node",
   "main": "src/index.js",
