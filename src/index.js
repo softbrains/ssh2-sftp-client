@@ -111,13 +111,14 @@ SftpClient.prototype.get = function(path, useCompression, encoding, otherOptions
                 });
 
                 let stream = sftp.createReadStream(path, options);
+                resolve(stream);
 
-                stream.on('error', (err) => {
-                    reject(err);
-                });
-                stream.on('readable', () => {
-                    resolve(stream);
-                });
+                // stream.on('error', (err) => {
+                //     reject(err);
+                // });
+                // stream.on('readable', () => {
+                //     resolve(stream);
+                // });
             } catch(err) {
                 reject(err);
             }
